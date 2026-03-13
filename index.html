@@ -10,8 +10,15 @@
     <link rel="stylesheet" href="./style/common.css">
     <link rel="stylesheet" href="./style/header2.css">
     <script src="./script/header2.js"></script>
+    
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="./style/index.css">
 </head>
 <body>
+    <!-- pc용 헤더 -->
     <header>
         <div class="common-frame">
             <div class="logo">
@@ -79,6 +86,7 @@
                 </ul>
         </div>
     </header>
+    <!-- 스마트 기기에서 보이는 메뉴 -->
     <div class="menu-smart-hidden">
         <div class="menu-top">
             <div class="common-frame">
@@ -160,6 +168,7 @@
                 </ul>
             </div>      
         </div>
+    <!-- 스마트 기기용 헤더     -->
         <div class="header-smart">
             <div class="common-frame">
                 <div class="logo">
@@ -170,5 +179,62 @@
                 <span class="btn-menu"><img src="./img/btn-menu.svg" alt="전체메뉴버튼"></span>
             </div>
         </div>
+
+        <!-- 전체 컨텐츠 -->
+        <main>
+                <!-- 히어로 배너 -->
+                <!-- Slider main container -->
+                <div class="swiper hero-slider">
+                <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="./img/slide1-pc.jpg" alt="오프셋 커피 배너1" class="pc">
+                            <img src="./img/slide1-tab.jpg" alt="오프셋 커피 배너2" class="tab">
+                            <img src="./img/slide1-mo.jpg" alt="오프셋 커피 배너3" class="mo">
+                            
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/slide2-pc.jpg" alt="오프셋 커피 배너1" class="pc">
+                            <img src="./img/slide2-tab.jpg" alt="오프셋 커피 배너2" class="tab">
+                            <img src="./img/slide2-mo.jpg" alt="오프셋 커피 배너3" class="mo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/slide3-pc.jpg" alt="오프셋 커피 배너1" class="pc">
+                            <img src="./img/slide3-tab.jpg" alt="오프셋 커피 배너2" class="tab">
+                            <img src="./img/slide3-mo.jpg" alt="오프셋 커피 배너3" class="mo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/slide4-pc.jpg" alt="오프셋 커피 배너1" class="pc">
+                            <img src="./img/slide4-tab.jpg" alt="오프셋 커피 배너2" class="tab">
+                            <img src="./img/slide4-mo.jpg" alt="오프셋 커피 배너3" class="mo">
+                        </div>
+                    </div>
+                    <div class="pagination"></div>
+                </div>
+                <script>
+                    const heroSwiper = new Swiper('.hero-slider', {
+                    // Optional parameters
+                    // direction: 'vertical',
+                    loop: true,
+
+                    // If we need pagination
+                    pagination: {
+                        el: '.pagination',
+                    },
+
+                    // Navigation arrows
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+
+                    // And if we need scrollbar
+                    scrollbar: {
+                        el: '.swiper-scrollbar',
+                    },
+                    });
+                </script>
+        </main>       
     </body>       
-</html>
+    </html>

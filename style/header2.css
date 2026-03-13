@@ -6,6 +6,11 @@ header{
     overflow: hidden;
     box-sizing: border-box;
     transition: all 0.5s ease 0s;
+    position: fixed;
+    left:0;
+    top:0;
+    z-index: 1000;
+    width:100%;
 }
 header:hover{
     max-height: 400px;
@@ -49,6 +54,7 @@ header .sns li{
 .btn-close img{
     height:1.2rem;
 }
+
 @media (max-width:1440px){
     .menu-smart-hidden{
         /* transform: translateX(-100%); */
@@ -69,6 +75,12 @@ header .sns li{
     .header-smart{
         display: block;
         border-bottom: 1px solid var(--point-color);
+        position: fixed;
+        z-index: 2000;
+        left:0;
+        top:0;
+        width:100%;
+        background-color: #fff;
     }
     .header-smart .common-frame{
         display: flex;

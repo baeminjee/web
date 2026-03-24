@@ -22,6 +22,9 @@ document.addEventListener("DOMContentLoaded",()=>{
     })
     list.innerHTML = result
 
-    console.log(toWon(3000))
+    
+
+
+
 
 })

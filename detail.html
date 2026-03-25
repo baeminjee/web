@@ -19,7 +19,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
     <script src="./script/listArray.js"></script>
-    <script src="./script/listControl.js"></script>
+    <script src="./script/detail-recommend.js"></script>
     <link rel="stylesheet" href="./style/detail.css">
 </head>
 <body>
@@ -233,8 +233,146 @@
                         <li><a href="#">구매하기</a></li>
                     </ul>
                 </div>    
-            </div>    
+            </div>
         </div>
+        <div class="common-frame sticky-menu-wrap">
+            <ul class="sticky-menu">
+                <li><a href="#">많이 찾는 제품</a></li>
+                <li><a href="#">영양 성분</a></li>
+                <li><a href="#">리뷰</a></li>
+            </ul>
+        </div>
+
+        <div class="recomd-product">
+            <div class="common-frame">
+                <h2>많이 찾는 제품</h2>
+                <ul class="list-grid"></ul>
+            </div>
+        </div>
+
+        <div class="nutri">
+            <div class="common-frame">
+                <h2>영양 성분</h2>
+                <div class="nutri-inner">
+                    <div class="nutri1">
+                        <h3>Buscuit OFFlatte</h3>
+                        <p>바삭한 비스킷의 식감과 진한 에스프레소가 어우러진 OFFSET의 시그니처 라테</p>
+                        <table>
+                            <caption>1회 제공량 기준</caption>
+                            <tr>
+                                <th>성분명</th>
+                                <th>함량</th>
+                            </tr>
+                            <tr>
+                                <td class="fwb">칼로리 (Calories)</td>
+                                <td class="fwm">420 kcal</td>
+                            </tr>
+                            <tr>
+                                <td class="fwb">당류 (Sugars)</td>
+                                <td class="fwm">38g</td>
+                            </tr>
+                            <tr>
+                                <td class="fwb">단백질 (Protein)</td>
+                                <td class="fwm">7g</td>
+                            </tr>
+                            <tr>
+                                <td class="fwb">포화지방 (Saturated Fat)</td>
+                                <td class="fwm">14g</td>
+                            </tr>
+                            <tr>
+                                <td class="fwb">나트륨 (Sodium)</td>
+                                <td class="fwm">180mg</td>
+                            </tr>
+                            <tr>
+                                <td class="fwb">카페인 (Caffeine)</td>
+                                <td class="fwm">150mg</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="nutri2">
+                        <img src="./img/nut-img.jpg" alt="영양 성분">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="review">
+            <div class="common-frame">
+                <h2>리뷰</h2>
+                <div class="review-wrap">
+                    <div class="rev-con">
+                        <div class="rev-user-info">
+                            <h4>design_holic92</h4>
+                            <p>2026.03.20</p>
+                            <div class="likes">
+                                <img src="./img/likes.svg" alt="좋아요 별">
+                            </div>
+                        </div>
+                        <div class="rev-desc">
+                            <h4>디자인 전공생의 당 충전</h4>
+                            <div class="re-thumb-list-wrap">
+                                <ul class="rev-thumb-list">
+                                <li><img src="./img/list1.jpg" alt="리뷰이미지1"></li>
+                                <li><img src="./img/list2.jpg" alt="리뷰이미지2"></li>
+                                <li><img src="./img/list3.jpg" alt="리뷰이미지3"></li>
+                            </ul>
+                            </div>
+                            <p>팀 프로젝트 준비하다가 머리 식히러 왔는데 비주얼부터 합격이에요!  위에 올라간 비스킷이 크림이랑 만나서 적당히 촉촉해질 때 먹으면 진
+                               짜 꿀맛입니다. 라떼의 고소함이랑 카라멜 시럽의 단맛이 밸런스가 좋아서 끝까지 안 질리고 마셨어요. 컵 디자인이랑 층 분리된 모습이 너무 
+                               예뻐서 사진 찍기에도 딱 좋습니다. 당 떨어질 때 무조건 생각날 것 같은 맛이에요.</p>
+                        </div>
+                    </div>
+                    <div class="rev-con">
+                        <div class="rev-user-info">
+                            <h4>latte_lover_v</h4>
+                            <p>2026.03.22</p>
+                            <div class="likes">
+                                <img src="./img/likes.svg" alt="좋아요 별">
+                            </div>
+                        </div>
+                        <div class="rev-desc">
+                            <h4>홈카페 매니아의 텍스처</h4>
+                            <div class="re-thumb-list-wrap">
+                                <ul class="rev-thumb-list">
+                                    <li><img src="./img/list4.jpg" alt="리뷰이미지4"></li>
+                                    <li><img src="./img/list5.jpg" alt="리뷰이미지5"></li>
+                                    <li><img src="./img/list6.jpg" alt="리뷰이미지6"></li>
+                                </ul>
+                            </div>
+                            <p>크림이 정말 묵직하고 쫀쫀해서 첫 입이 정말 인상적이었어요. 비스킷 가루가 씹히는 식감이 재미있고, 커피 자체가 산미가 적고 고소해서 크
+                               림이랑 잘 어울립니다. 다만 칼로리가 조금 걱정되는 묵직함이라 가끔 아주 특별한 날에만 먹어야 할 것 같아요. 빨대보다는 처음에 컵 채로 
+                               크림이랑 커피를 같이 들이켜는 걸 추천합니다. 오프셋 오면 꼭 마셔봐야 할 메뉴답네요!</p>
+                        </div>
+                    </div>
+                    <div class="rev-con">
+                        <div class="rev-user-info">
+                            <h4>office_worker_K</h4>
+                            <p>2026.03.23</p>
+                            <div class="likes">
+                                <img src="./img/likes.svg" alt="좋아요 별">
+                            </div>
+                        </div>
+                        <div class="rev-desc">
+                            <h4>직장인의 힐링 리뷰</h4>
+                            <div class="re-thumb-list-wrap">
+                                <ul class="rev-thumb-list">
+                                    <li><img src="./img/list7.jpg" alt="리뷰이미지7"></li>
+                                    <li><img src="./img/list8.jpg" alt="리뷰이미지8"></li>
+                                    <li><img src="./img/list9.jpg" alt="리뷰이미지9"></li>
+                            </ul>
+                            </div>
+                            <p>점심시간에 기분 전환하러 들렀는데 비스킷오프라테 한 잔에 스트레스가 다 풀리네요. 로투스 과자의 익숙한 맛인데 커피랑 합쳐지니까 훨씬 
+                               고급스러운 느낌이에요. 너무 달기만 한 게 아니라 에스프레소의 쌉싸름함이 뒤에서 잡아줘서 좋았습니다. 토핑으로 올라간 비스킷 조각을 
+                               크림에 듬뿍 찍어 먹는 게 신의 한 수예요. 매장 분위기랑도 너무 잘 어울리는 메뉴라 만족스럽습니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+    
     </main>
 
 

@@ -91,7 +91,7 @@
 .franchise{
     background:
     linear-gradient(30deg,rgba(0, 0, 0, 0.62),rgba(0, 0, 0, 0.62)),
-    url(../img/bg-franchise.jpg) no-repeat 50% 50% / cover;
+    url(../img/main-figure.jpg) no-repeat 50% 50% / cover;
     color:#fff;
     padding: var(--space-3x-large) 0;
     text-align: center;

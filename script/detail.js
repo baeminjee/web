@@ -29,11 +29,11 @@ document.addEventListener("DOMContentLoaded",()=>{
                         <div>
                             <div class="box-number">
                                 <span class="btn-minus">
-                                    <img src="./img/ic_baseline-minus.svg" alt="감소 버튼">
+                                    <img src="./img/btn-minus.svg" alt="감소 버튼">
                                 </span>
                                 <span class="current-count">1</span>
                                 <span class="btn-plus">
-                                    <img src="./img/ic_baseline-plus.svg" alt="증가 버튼">
+                                    <img src="./img/btn-plus.svg" alt="증가 버튼">
                                 </span>
                             </div>
                         </div>

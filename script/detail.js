@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded",()=>{
                             </a>
                         </li>
                         <li><a href="#">장바구니</a></li>
-                        <li><a href="#">구매하기</a></li>
+                        <li><a href="#" class="btn-purchase">구매하기</a></li>
                     </ul>
                 </div>
             </div>`

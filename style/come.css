@@ -51,8 +51,8 @@
 }
 .come1-dl1+p{
     margin-top: var(--space-small);
-    font-size: var(--fs-bd2);
-    color:#E65252;
+    font-size: var(--fs-det);
+    color:#FF208C;
 }
 
 .come2{
@@ -73,7 +73,7 @@
 }
 .come2-list li{
     flex:1;
-    background-color: #F5F8FF;
+    background-color: #FFF6FA;
     padding:var(--space-normal);
     padding-bottom: var(--space-large);
     border-radius: 0.75rem;

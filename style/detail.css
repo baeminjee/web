@@ -108,12 +108,13 @@
 .btns-buy>li:nth-of-type(3) a{
     background-color: var(--point-color);
 }
-.sticky-menu{
+.sticky-menu {
     display: flex;
-    gap:var(--space-normal);
+    gap: var(--space-normal);
     justify-content: center;
     font-size: var(--fs-bd2);
     font-weight: var(--fw-bold);
+    color: #fff;
 }
 .sticky-menu a{
     padding:var(--space-small) var(--space-large);
@@ -233,6 +234,9 @@
 .review h2{
     margin-bottom: var(--space-x-large);
     text-align: center;
+}
+.btn-purchase{
+    color: #fff;
 }
 .rev-con{
     display: flex;
